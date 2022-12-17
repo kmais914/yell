@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/* common */
+body {
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+section {
+  text-align: center;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+section + section {
+  margin-top: 200px;
+}
+/* header  */
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: blanchedalmond;
+  align-items: center;
+}
+
+header img {
+  margin-left: 10px;
+}
+
+header .container {
+  display: flex; 
+  gap: 32px;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin-top: 10px;
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  list-style: 50px;
+}
+
+/* hero */
+
+.hero {
+  margin-top: 100px;
+}
+
+.hero img {
+  text-align: center;
+  width: 50%;
+  object-fit: cover;
+}
+
+.hero p {
+  font-size: 36px;
+}
+
+
+/* article */
+
+article table {
+  font-size: 24px;
+}
+
+article td {
+
+  padding-left: 100px;
+}
+
+article {
+  width: 600px;
+  margin: 0 auto;
+}
+
+article .container {
+  text-align: left;
+}
+
+
+
+article .news {
+  font-size: 32px;
+  color: blue;
+  text-shadow: 3px 3px skyblue;
+  font-weight: bold;
+}
+
+
+article .container {
+  
+  flex-direction: column;
+}
+
+article img {
+  padding: 0 auto;
+}
+
+article h1 {
+  font-size: 24px;
+  border-bottom: 2px solid red;
+  display: inline;
+}
+
+/* footer  */
+
+footer  {
+  margin-top: 200px;
+  clear: both;
+  height: 80px;
+  background: lightgray;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 20px;
+  /* outline: 2px solid red; */
+}
+
+.accecs {
+  display: flex;
+  gap: 64px;
+}
+
+.text1,.text2 {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  body {
+    background: pink;
+    }
+  .hero img {
+    width: 500px;
+  }
+
+
+  header .container {
+    /* display: flex;  */
+    gap: 2px;
+    flex-wrap: wrap;
+    align-items: right;
+    /* margin-right: px; */
+  }
+
+  .container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; 
+    width: 100px; 
+    height: 50px;
+    text-align: center;
+    list-style: 50px;
+  }
+
+
+  .hero p {
+    font-size: 16px;
+    font-weight: bold;
+  } 
+
+  article {
+    width: calc(100%-32px);
+  }
+
+  footer {
+    font-size: 10px;
+    padding: 20px 0;
+  }
+  footer .accecs {
+      display: block;
+  }
+}
